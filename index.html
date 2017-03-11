@@ -53,40 +53,105 @@
 			max-width: 100px;
 			border: none;
 		}
-		.menubar{
-			position: fixed;
-			top: 10px;
-			left: 10px;
-			width: 9%;
-			height: 30%;
-			text-align: right;
-		}
-		.menubar a{
-			background-color: #e8396e;
-			font-size: 25px;
-			color: #fcfdfc;
-			display: block;
-			text-decoration: none;
-  		border-radius: 5%;
-			margin-bottom: 10px;
-		}
-		.menubar a:hover{
-			background-color: #f5a4bc;
-			transform: translate(-10px, 0);
-			transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-		}
 		.icon:hover{
 			filter: drop-shadow(0px 0px 14px #C84E4F);
 		}
+
+    .menu{
+      position: fixed;
+      top: 100px;
+      left: 31px;
+
+
+    }
+    .menu button{
+      background-color: #f5a4bc;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 10%;
+      margin: 9px -22px;
+      cursor: pointer;
+    }
+
+    .dropdow a{
+      display: none;
+
+      color: white;
+      padding: 10px 10px;
+      border-radius: 50%;
+      background-color: #f5a4bc;
+      text-decoration: none;
+      margin-left: 30px;
+      border:
+    }
+
+    #menuicon{
+      border: none;
+      border-radius: 50%;
+      max-width: 70px;
+      position: fixed;
+      top: 31px;
+      left: 31px;
+      cursor: pointer;
+    }
+    .dropdow{
+      display: none;
+    }
+    .menu:hover .dropdow{
+      display: block;
+    }
+    .dropdow:hover a{
+      display: inline-block;
+    }
+    .dropdow button:hover{
+      background-color: #e8396e;
+      transform: translateY(-5px);
+      box-shadow: 0px 10px 15px 0px rgba(50, 50, 50, 0.75);
+      transition: all 0.3s linear;
+    }
+    .dropdow a:hover{
+      background-color: #e8396e;
+      box-shadow: 0px 0px 30px 0px #f5a4bc;
+    }
   </style>
   <body>
     <div class="wrap">
-			<div class="menubar">
-  			<a href="#home">Home</a>
-  			<a href="#news">News</a>
-  			<a href="#contact">Contact</a>
-  			<a href="#about">About</a>
-			</div>
+
+      <div class="menu">
+        <img id="menuicon" src="pic/menu.gif" alt="iconmenu">
+        <div class="dropdow">
+          <button type="button" name="Home">Home</button>
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+        <div class="dropdow">
+          <button type="button" name="Contact">Contact</button>
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+        <div class="dropdow">
+          <button type="button" name="About">About</button>
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+        <div class="dropdow">
+          <button type="button" name="Rum">Rum</button>
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+
+      </div>
+
+
       <div id="banner">
         <img src="pic/rsz_1cover.jpg" alt="gai xinh" title="Banner">
       </div>
@@ -108,8 +173,8 @@
         <img class="sau" src="pic/hinh10.jpg" alt="gai xinh" title="Rờ gì vậy :))">
       </div>
 
-			<a href="#banner"><img class ="icon" src="http://icons.iconarchive.com/icons/raindropmemory/artificial-girl/512/Nocchi-icon.png" alt="icon"></a>
-			
+			<a href="#banner"  ><img class ="icon" src="http://icons.iconarchive.com/icons/raindropmemory/artificial-girl/512/Nocchi-icon.png" alt="icon"></a>
+
     </div>
   </body>
 </html>
